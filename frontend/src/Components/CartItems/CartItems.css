@@ -1,0 +1,361 @@
+.cartitems {
+  margin: 100px 170px;
+}
+
+.cartitems hr {
+  height: 3px;
+  background: #e2e2e2;
+  border: 0;
+}
+
+.cartitems-format-main,
+.cartitems-format {
+  display: grid;
+  grid-template-columns: 0.7fr 2.5fr 1fr 0.8fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 0px;
+  color: #333;
+}
+
+.cartitems-format-main {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartitems-format {
+  font-size: 17px;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.carticon-product-icon {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-remove-icon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.cartitem-quantity {
+  width: 64px;
+  height: 48px;
+  border: 2px solid #ebebeb;
+  background: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.cartitems-size-select {
+  width: 60px; /* Reduced width for smaller size dropdown */
+  padding: 5px; /* Adjusted padding */
+  border: 2px solid #ebebeb;
+  border-radius: 6px;
+  font-size: 14px; /* Slightly smaller font */
+  background: #fff;
+  cursor: pointer;
+}
+
+.cartitems-down {
+  display: flex;
+  margin: 100px 0px;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.cartitems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cartitems-total h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+  font-size: 17px;
+  color: #555;
+}
+
+.cartitems-total button {
+  width: 262px;
+  height: 58px;
+  border: none;
+  background: #ff5a5a;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cartitems-total button:hover {
+  background: #e44747;
+}
+
+.cartitem-promocode {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartitem-promocode p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.cartitem-promobox {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: #eaeaea;
+  border-radius: 8px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.cartitem-promobox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  flex: 1;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.cartitem-promobox button {
+  width: 100px;
+  height: 100%;
+  font-size: 14px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Payment Modal Styles */
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.payment-modal {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.payment-methods label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.payment-methods label:hover {
+  border-color: #ff4141;
+  background-color: #fff9f9;
+}
+
+/* UPI Scanner Styles */
+.upi-scanner {
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+}
+
+.upi-scanner img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+/* Credit Card Form Styles */
+.credit-card-form {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Buttons */
+.payment-confirm-btn, .pay-now-btn {
+  background-color: #ff4141;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.close-modal-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Address Form Styles */
+.address-form {
+  margin: 20px 0;
+}
+
+.address-form h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Disabled Button Style */
+button:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1280px) {
+  .cartitems {
+    margin: 60px 50px;
+  }
+
+  .cartitems-format-main,
+  .cartitems-format {
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr 60px;
+    gap: 20px;
+    padding: 15px 0px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .carticon-product-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .cartitem-quantity {
+    width: 40px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .cartitems-size-select {
+    width: 40px; /* Reduced width for smaller screens */
+    padding: 3px; /* Adjusted padding */
+    font-size: 12px; /* Smaller font for smaller screens */
+  }
+
+  .cartitems-down {
+    margin: 80px 0px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cartitems-total button {
+    max-width: 200px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .cartitem-promobox {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .cartitem-promobox button {
+    width: 100px;
+  }
+}
