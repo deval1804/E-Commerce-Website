@@ -15,7 +15,7 @@ This e-commerce website allows users to browse products by category, add items t
 - 🔍 **Product Listing by Category**
   - Men: Clothes, Watches, Goggles, Footwear
   - Women: Clothes, Watches, Goggles, Footwear
-  - Kids: Toys
+  - Kids: Toys, Clothes, Footwear, Goggles
 
 - 👤 **User Authentication**
   - Secure **Sign Up** and **Login**
@@ -39,8 +39,6 @@ This e-commerce website allows users to browse products by category, add items t
   - Manage orders
   - Secure access
 
----
-
 ## 🖥️ Installation & Run Instructions
 
 ### 🔹 Frontend (React)
@@ -51,19 +49,11 @@ npm install
 npm start
 
 🔹 Backend (Node.js, Express)
-bash
-Copy
-Edit
 cd backend
-npm install
 node ./index.js
 
 🔹 Admin Panel (React with Vite)
-bash
-Copy
-Edit
 cd admin
-npm install
 npm run dev
 
 📑 Project Workflow
@@ -84,30 +74,23 @@ Proceed to checkout with available payment options
 Subscribe option on the home page for newsletters
 
 📦 Tech Stack
-Frontend:
+=> Frontend:
+   React.js
+   Bootstrap
+   HTML, CSS
 
-React.js
 
-Bootstrap
-
-HTML, CSS
-
-Backend:
-
-Node.js
-
-Express.js
-
-MongoDB
-
-JWT
-
-Multer
+=> Backend:
+   Node.js
+   Express.js
+   MongoDB
+   JWT
+   Multer
 
 📑 License
 This project is licensed under the MIT License.
 
 📞 Contact
-Developer: Deval1804
+Developer: Deval Darji
 
 GitHub: @deval1804
